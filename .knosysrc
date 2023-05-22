@@ -1,0 +1,15 @@
+{
+  "command": "./bin",
+  "site": {
+    "default": {
+      "alias": "oreilia",
+      "source": "./src",
+      "generator": "jekyll",
+      "git": {
+        "url": "https://github.com/oreilia/oreilia.git",
+        "branch": "gh-pages"
+      },
+      "cname": "oreilia.com"
+    }
+  }
+}

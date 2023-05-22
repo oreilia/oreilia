@@ -1,0 +1,20 @@
+{
+  "name": "oreilia",
+  "version": "0.0.0",
+  "description": "Babie of Ourai and Julia",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "copy": "node bin site copy",
+    "build": "node bin gen",
+    "clean": "rm -rf ./site/*/.asset-cache",
+    "start": "node bin site serve",
+    "predeploy": "npm run clean",
+    "deploy": "node bin site deploy"
+  },
+  "author": "Ourai Lin <ourairyu@gmail.com> (https://ourai.ws/)",
+  "license": "ISC",
+  "devDependencies": {
+    "@ntks/toolbox": "0.0.6"
+  }
+}
