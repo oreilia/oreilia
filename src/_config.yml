@@ -147,7 +147,11 @@ ksio:
       text: 欧雷
       url: https://linxoid.com/ourai/
     period:
-      start: 2019
+      start: 2017
   header:
     navbar:
       placement: right
+  footer:
+    links:
+      - text: 欧雷流
+        url: https://ourai.ws/

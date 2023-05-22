@@ -1,0 +1,33 @@
+@import "../components/entry-list";
+
+.HomeHeader {
+  text-align: center;
+
+  &-title {
+    margin-bottom: 25px !important;
+    font-size: 70px !important;
+    font-weight: 700;
+  }
+
+  &-slogan {
+    margin-bottom: 10px !important;
+    font-size: 25px;
+    font-weight: normal;
+  }
+}
+
+.EntryItem {
+  &--card {
+    @media (min-width: $screen-md-min) {
+      width: percentage(1 / 3);
+    }
+  }
+}
+
+.EntryCard {
+  height: 300px;
+
+  &-header {
+    height: 180px;
+  }
+}

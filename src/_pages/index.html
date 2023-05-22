@@ -1,0 +1,69 @@
+---
+layout: ksio/default
+
+ksio_asset_css:
+  - local/pages/index
+body-class:
+  - has-headerImage
+permalink: index.html
+---
+
+{% include ksio/partials/header.html %}
+<main class="Page-content">
+  {% assign banner_url = "local/pages/index/banner" | asset_path %}
+  <div class="Page-banner hidden-xs" style="background-image: url('{{ banner_url }}');">
+    <figure class="sr-only">
+      <img src="{{ banner_url }}" alt="❤️的手影">
+      <figcaption>❤️的手影</figcaption>
+    </figure>
+  </div>
+  <div class="container">
+    <article class="Page-main Article">
+      <header class="Article-header HomeHeader">
+        <div>
+          <h1 class="Article-title HomeHeader-title"><ruby>欧托邦<rp>（</rp><rt>Otopia</rt><rp>）</rp></ruby></h1>
+          <p class="HomeHeader-slogan">{{ site.tagline }}</p>
+        </div>
+      </header>
+      <div class="Article-content">
+        <h2>家庭创业</h2>
+        <p>以家庭为单位进行创业，摆脱他人控制，实现自由生活。</p>
+        <div class="EntryList">
+          <ul class="EntryList-content">
+            {% assign item_banner = "local/pages/index/ouraiverse" | asset_path %}
+            <li class="EntryItem EntryItem--card">
+              <div class="Card EntryCard">
+                <a class="Card-link EntryCard-link" href="https://meta.ourai.ws/?utm_source={{ site.ksio.meta.url }}&utm_medium=homepage" target="_blank" rel="external nofollow">
+                  <div class="EntryCard-header" style="background-image: url('{{ item_banner }}');">
+                    <div class="EntryCard-brief">
+                      <h4 class="EntryCard-name" data-toc-skip="true">欧雷宇宙</h4>
+                    </div>
+                  </div>
+                  <div class="EntryCard-body">
+                    <div class="EntryCard-description">思考并探索提升生活体验的思维方式与实操方法。</div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            {% assign item_banner = "local/pages/index/julias-handmade-food" | asset_path %}
+            <li class="EntryItem EntryItem--card">
+              <div class="Card EntryCard">
+                <a class="Card-link EntryCard-link" href="/projects/julias-handmade-food/">
+                  <div class="EntryCard-header" style="background-image: url('{{ item_banner }}');">
+                    <div class="EntryCard-brief">
+                      <h4 class="EntryCard-name" data-toc-skip="true">姜姜的手作料理</h4>
+                    </div>
+                  </div>
+                  <div class="EntryCard-body">
+                    <div class="EntryCard-description">甜美可爱的朱莉娅亲自特制的手作料理，不想来尝一尝吗？😋</div>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+{% include ksio/partials/footer.html %}

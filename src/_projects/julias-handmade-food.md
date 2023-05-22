@@ -5,15 +5,15 @@ ksio_asset_css:
   - local/projects/julias-handmade-food
 
 banner:
-  url: projects/julias-handmade-food/banner
+  url: local/projects/julias-handmade-food/banner
   description: 1988
-image: projects/julias-handmade-food/banner
+image: local/projects/julias-handmade-food/banner
 ---
 
 姜姜是个热爱生活，喜欢手作料理的可爱小主妇，烘焙、糖水等甜品都不在话下！
 
 <figure>
-  <img src="{{ 'projects/julias-handmade-food/handmade' | asset_path }}" alt="姜姜的手作料理">
+  <img src="{{ 'local/projects/julias-handmade-food/handmade' | asset_path }}" alt="姜姜的手作料理">
   <figcaption>姜姜的手作料理</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ image: projects/julias-handmade-food/banner
 除了发起线上团购之外，也会不定期不定地点在线下摆摊。另外，**接受企业下午茶、生日会等的预订。**
 
 <figure>
-  <img src="{{ 'projects/julias-handmade-food/jiangjiang-ice-rice' | asset_path }}" alt="在北支江公园摆摊">
+  <img src="{{ 'local/projects/julias-handmade-food/jiangjiang-ice-rice' | asset_path }}" alt="在北支江公园摆摊">
   <figcaption><a href="https://www.bilibili.com/video/BV1UM41137Hm/" target="_blank" rel="external nofollow">在北支江公园摆摊</a></figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ image: projects/julias-handmade-food/banner
 关于团购时间、摆摊地点等事宜，请扫码加姜姜微信咨询哦：
 
 <figure>
-  <img src="{{ 'projects/julias-handmade-food/wechat-qrcode' | asset_path }}" alt="姜姜的微信">
+  <img src="{{ 'local/projects/julias-handmade-food/wechat-qrcode' | asset_path }}" alt="姜姜的微信">
   <figcaption>姜姜的微信</figcaption>
 </figure>
 
@@ -62,7 +62,7 @@ image: projects/julias-handmade-food/banner
 <div class="EntryList">
   <ul class="EntryList-content">
   {% for item in site.data.local.goods.summer %}
-    {% assign item_banner = item.image | prepend: "projects/julias-handmade-food/" | asset_path %}
+    {% assign item_banner = item.image | prepend: "local/projects/julias-handmade-food/" | asset_path %}
     <li class="EntryItem EntryItem--card">
       <div class="Card EntryCard">
         <a class="Card-link EntryCard-link" href="javascript:void(0);">
@@ -94,22 +94,22 @@ image: projects/julias-handmade-food/banner
 
 以下为来自顾客的真实反馈（只展示 10 条）：
 
-![]({{ "projects/julias-handmade-food/feedback-1" | asset_path }})
+![]({{ "local/projects/julias-handmade-food/feedback-1" | asset_path }})
 
-![]({{ "projects/julias-handmade-food/feedback-2" | asset_path }})
+![]({{ "local/projects/julias-handmade-food/feedback-2" | asset_path }})
 
-![]({{ "projects/julias-handmade-food/feedback-3" | asset_path }})
+![]({{ "local/projects/julias-handmade-food/feedback-3" | asset_path }})
 
-![]({{ "projects/julias-handmade-food/feedback-4" | asset_path }})
+![]({{ "local/projects/julias-handmade-food/feedback-4" | asset_path }})
 
-![]({{ "projects/julias-handmade-food/feedback-5" | asset_path }})
+![]({{ "local/projects/julias-handmade-food/feedback-5" | asset_path }})
 
-![]({{ "projects/julias-handmade-food/feedback-6" | asset_path }})
+![]({{ "local/projects/julias-handmade-food/feedback-6" | asset_path }})
 
-![]({{ "projects/julias-handmade-food/feedback-7" | asset_path }})
+![]({{ "local/projects/julias-handmade-food/feedback-7" | asset_path }})
 
-![]({{ "projects/julias-handmade-food/feedback-8" | asset_path }})
+![]({{ "local/projects/julias-handmade-food/feedback-8" | asset_path }})
 
-![]({{ "projects/julias-handmade-food/feedback-9" | asset_path }})
+![]({{ "local/projects/julias-handmade-food/feedback-9" | asset_path }})
 
-![]({{ "projects/julias-handmade-food/feedback-10" | asset_path }})
+![]({{ "local/projects/julias-handmade-food/feedback-10" | asset_path }})
