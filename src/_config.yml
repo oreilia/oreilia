@@ -96,6 +96,11 @@ defaults:
         - ksio/initializers/time
         - ksio/initializers/lazyload
       siblings: true
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: ksio/page
 
 
 
@@ -132,7 +137,10 @@ feed:
 
 # KnoSys site config
 ksio:
+  meta:
+    url: https://oreilia.com
   brand:
+    text: Otopia
     color: "#0871ab"
   copyright:
     owner:

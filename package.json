@@ -7,7 +7,7 @@
   "scripts": {
     "copy": "node bin site copy",
     "build": "node bin gen",
-    "clean": "rm -rf ./site/*/.asset-cache",
+    "clean": "rm -rf ./src/.asset-cache",
     "start": "node bin site serve",
     "predeploy": "npm run clean",
     "deploy": "node bin site deploy"
