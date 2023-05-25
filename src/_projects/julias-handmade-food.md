@@ -6,7 +6,7 @@ ksio_asset_css:
 
 banner:
   url: local/projects/julias-handmade-food/banner
-  description: 1988
+  description: 冰饭团购
 image: local/projects/julias-handmade-food/banner
 ---
 
