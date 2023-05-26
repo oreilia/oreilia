@@ -155,3 +155,4 @@ ksio:
     links:
       - text: 欧雷流
         url: https://ourai.ws/
+  analytics: true
