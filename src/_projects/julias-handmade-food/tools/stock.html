@@ -1,0 +1,122 @@
+---
+title: 摆摊助手
+
+ksio_asset_js:
+  - local/projects/julias-handmade-food
+---
+
+<p>今天是<span id="todayDate"></span>，<span id="todayStatus"></span></p>
+<h2 data-toc-skip="true">库存</h2>
+<div id="unlockedStock" style="display: none;">
+  <table id="stockTable" class="table table-bordered">
+    <thead>
+      <tr><th>半成品</th><th>数量</th></tr>
+    </thead>
+    <tbody></tbody>
+    <tfoot>
+      <tr><td>总计</td><td id="stockTotal">-</td></tr>
+    </tfoot>
+  </table>
+  <button id="saveStock" class="btn btn-primary">保存</button>
+</div>
+<div id="lockedStock" style="display: none;">
+  <ul id="stockList"></ul>
+</div>
+<h2 data-toc-skip="true">销售</h2>
+<table id="soldTable" class="table table-bordered">
+  <colgroup>
+    <col width="60">
+    <col>
+    <col width="60">
+    <col width="60">
+    <col>
+    <!-- <col width="180"> -->
+  </colgroup>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>成品</th>
+      <th>数量</th>
+      <th>金额</th>
+      <th>备注</th>
+      <th>时间</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+  <tfoot>
+    <tr>
+      <td>合计</td>
+      <td colspan="5">-</td>
+    </tr>
+  </tfoot>
+</table>
+<div class="modal fade" id="soldModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">已售成品</h4>
+      </div>
+      <div class="modal-body">
+        <form id="soldForm">
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">底料</label>
+            <select class="form-control" id="semiFinished" name="semiFinished">
+              <option value="">请选择</option>
+            </select>
+          </div>
+          <div id="superaddition" class="form-group" style="display: none;">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="superaddition" value="mg"> 芒果
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="superaddition" value="xg"> 西瓜
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="superaddition" value="yy"> 芋圆
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="superaddition" value="yg"> 椰果
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="superaddition" value="sxc"> 烧仙草
+            </label>
+          </div>
+          <div id="taste" class="form-group" style="display: none;">
+            <label class="radio-inline">
+              <input type="radio" name="taste" value="lbg" checked> 老冰棍
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="taste" value="yj"> 椰椰
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="">数量</label>
+            <input type="number" class="form-control" name="amount" value="1" placeholder="只能是规格一样的成品">
+          </div>
+          <div id="receivable" class="form-group">
+            <label>应收</label>
+            <div class="form-control-static">0</div>
+            <input type="hidden" name="receivable" value="0">
+          </div>
+          <div class="form-group">
+            <label for="">实收</label>
+            <input type="number" class="form-control" name="received" placeholder="若无特惠就不填，默认为应收">
+          </div>
+          <div class="form-group">
+            <label for="remark" class="control-label">备注</label>
+            <textarea class="form-control" id="remark" name="remark"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button id="addSold" type="button" class="btn btn-primary">确定</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="soldActionBar" style="display: none;">
+  <button class="btn" data-toggle="modal" data-target="#soldModal" data-backdrop="static" data-keyboard="false">添加</button>
+  <button id="saveSold" class="btn btn-primary">保存</button>
+</div>

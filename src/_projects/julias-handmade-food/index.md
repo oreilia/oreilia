@@ -8,6 +8,8 @@ banner:
   url: local/projects/julias-handmade-food/banner
   description: 冰饭团购
 image: local/projects/julias-handmade-food/banner
+
+permalink: /projects/julias-handmade-food/
 ---
 
 姜姜是个热爱生活，喜欢手作料理的可爱小主妇，烘焙、糖水等甜品都不在话下！
