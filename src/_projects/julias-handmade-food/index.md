@@ -25,7 +25,7 @@ permalink: /projects/julias-handmade-food/
 
 ## 售卖方式
 
-除了发起线上团购之外，也会不定期不定地点在线下摆摊。另外，**接受企业下午茶、生日会等的预订。**
+除了发起线上团购之外，也会不定期不定地点在线下摆摊。另外，**接受企业、学校的下午茶、生日会等的预订。**
 
 <figure>
   <img src="{{ 'local/projects/julias-handmade-food/jiangjiang-ice-rice' | asset_path }}" alt="在北支江公园摆摊">
